@@ -1,0 +1,12 @@
+#submit {
+	margin-top: 1em;
+	width: 100%;
+}
+
+.btn-default {
+	background-color: #80EC79;
+}
+
+.navbar-default, .panel-default>.panel-heading {
+	background-color: #B7FCB3;
+}

@@ -1,10 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Making of</title>
+	<title>Timesheet App</title>
+	<!-- Linking to Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Linking to style.css -->
+	<link rel="stylesheet" href="assets/style/style.css">
 </head>
+
 <body>
-UNDER CONSTRUCTION
+	
+	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
+    		<!-- Brand and toggle get grouped for better mobile display -->
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+      			<a class="navbar-brand" href="#">peter surowski</a>
+    		</div>
+
+    		<!-- Collect the nav links, forms, and other content for toggling -->
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+	      		<form class="navbar-form navbar-right">
+	        		<div class="form-group">
+	          			<input id="search" type="text" class="form-control" placeholder="Search">
+	        		</div>
+	        		<button type="submit" class="btn btn-default" id="search-button">Submit</button>
+	      		</form>
+	      		<ul class="nav navbar-nav navbar-right">
+	        		<li class="dropdown">
+	          			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span><span class="caret"></span></a>
+	          			<ul class="dropdown-menu">
+	          				<li><a href="instructions.html">instructions</a></li>
+	            			<li><a href="https://petersurowski.github.io/Bootstrap-Portfolio/">portfolio</a></li>
+	            			<li><a href="making-of.html">making of</a></li>
+	            			<li role="separator" class="divider"></li>
+	            			<li><a href="#">reset</a></li>
+	          			</ul>
+	        		</li>
+	      		</ul>
+    		</div>
+  		</div>
+	</nav>
+
+<div class="container">
+	<div class="page-header">
+	  <h1>Making of "Timesheet"</h1>
+	  <h1><small>This app is designed to keep track of an employee's basic information, including their full names, their start dates, how much they are paid, how long they have been working at the company and how much the company has paid the person to date.</small></h1>
+	  <h1><small>Web develoer Peter Surowski created the app using the programming languages HTML, CSS and JavaScript. He also used the Bootstrap framework and the jQuery library. He used the Moments.js API to help with the date calculations and formating and he used Firebase as his database for storing the employee information entered by the user.</small></h1>
+	  <h1><small>It took him about four hours and was built as part of his course work in <a href="https://bootcamp.ce.uci.edu/">The Coding Bootcamp</a> at <a href="http://www.uci.edu/">University of California, Irvine.</a></small></h1>
+	</div>
+</div>
+
+
+
+
+
+<!--Connecting to Firebase-->
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Linking to JavaScript -->
+<script src="assets/script/script.js"></script>
+<!-- Link to Moment.js -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
 </body>
 </html>

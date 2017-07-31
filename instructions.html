@@ -44,92 +44,22 @@
 	          			</ul>
 	        		</li>
 	      		</ul>
-    		</div><!-- /.navbar-collapse -->
-  		</div><!-- /.container-fluid -->
+    		</div>
+  		</div>
 	</nav>
 
-<!-- The body starts here -->
-<!-- Panel for the name of the current employee being examined to appear -->
 <div class="container">
-	<div class="panel panel-default">
-  	<!-- Default panel contents -->
-  	<div class="panel-heading">Employee</div>
- 		<div class="panel-body">
-   		<p id="employee-output">Example employee name</p>
- 		</div>
+	<div class="page-header">
+	  <h1>Instructions</h1>
+	  <h1><small>This app lets you keep track of your employees' basic information, including their full names, their job titles, when they started working at your company, how much they make and how much your company has paid them to date.</small></h1>
+	  <h1><small>To use it, fill in the fields in the "Add an employee" section and hit "submit." This will save all the info you entered in a database. To access the info, enter either a first, last or the full name of an employee in the search bar in the upper-right corner of your screen and hit "submit." The info to all the employees who match that name will appear on the screen.</small></h1>
+	  <h1><small>The database where the info is stored can be <a href="https://console.firebase.google.com/u/0/project/timesheet-b00b0/database/data">edited here.</a></small></h1>
 	</div>
-</div>
-  <!-- Table -->
-<div class="container">
-  <table class="table">
-  	<tr>
-  		<th>Name</th>
-  		<th>Role</th>
-  		<th>Start date</th>
-  		<th>Months worked</th>
-  		<th>Monthly rate</th>
-  		<th>Paid to date</th>
-  	</tr>
-  	<tr>
-  		<td id="data-name">example</td>
-  		<td id="data-role">example</td>
-  		<td id="data-start">example</td>
-  		<td id="data-months">example</td>
-  		<td id="data-rate">example</td>
-  		<td id="data-paid">example</td>
-  	</tr>
-  </table>
-</div>
 
-<!-- Panels to input new employee data. -->
-<div class="container">
-	<div class="panel panel-default">
-		<div class="panel-heading">Add an employee</div>
-		<div class="panel-body">
-			<!--Name input-->
-			<div class="row">
-  				<div class="col-lg-2">
-  				<span>First name</span>
-    				<div class="input-group">
-      				<input type="text" class="form-control" id="input-first-name" placeholder="Albert">
-    				</div>
-				</div>
-			<div class="col-lg-3">
-  				<span>Last name</span>
-    				<div class="input-group">
-      				<input type="text" class="form-control" id="input-last-name" placeholder="Einstein">
-    				</div>
-				</div>	
-				<!--Role input-->
-	  			<div class="col-lg-3">
-	  			<span>Role</span>
-	    			<div class="input-group">
-	      			<input type="text" class="form-control" id="input-role" placeholder="professor">
-	    			</div>
-	  			</div>
-	  			<!--Start date input-->
-	  			<div class="col-lg-2">
-	  			<span>Start date</span>
-	    			<div class="input-group">
-	      			<input type="text" class="form-control" id="input-date"  placeholder="MM/DD/YYYY">
-	    			</div>
-	  			</div>
-	  			<!--Monthly rate input-->
-				<div class="col-lg-2">
-	  			<span>Monthly rate</span>
-	    			<div class="input-group">
-	      			<input type="text" class="form-control" id="input-rate" placeholder="Just numbers, please.">
-	     			</div>
-	  			</div>
-	 		</div>
-	 		<div class="row">
-	 			<div class="col-lg-2">
-	 				<button type="submit" class="btn btn-default" id="submit" >Submit</button>
-	 			</div>
-	 		</div>
-		</div>
-	</div>
-</div>	
+
+
+
+
 
 <!--Connecting to Firebase-->
 <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
@@ -144,9 +74,3 @@
 
 </body>
 </html>
-
-
- 		
-   		
- 		
-	
